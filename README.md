@@ -7,9 +7,9 @@ Each branch corresponds to a specific tutorial or week, making it easy to access
 - Navigate to the repository.
 - Click on the **branch dropdown menu** (top-left).
 - Select the branch for the tutorial or topic you want to view:
-  - Tutorial-1 → Code examples for Tutorial 1
-  - Tutorial-2 → Code examples for Tutorial 2
-  - Tutorial-3 → Code examples for Tutorial 3 _(and so on for each tutorial)_
+  - Lab-1 → Code examples for Tutorial 1
+  - Lab-2 → Code examples for Tutorial 2
+  - Lab-3 → Code examples for Tutorial 3 _(and so on for each tutorial)_
 
 ### 📁 Opening and Running the Files
 - It is recommended to use **Visual Studio Code (VS Code)** along with the **Live Server** extension to open and run the HTML/CSS/JavaScript files.
