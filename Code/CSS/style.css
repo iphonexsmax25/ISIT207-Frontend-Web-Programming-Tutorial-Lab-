@@ -23,6 +23,10 @@ img {
     width: 100%;
     display: block;
 }
+.container-width {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 
 /* =========================================
@@ -135,63 +139,196 @@ nav a:hover {
    ========================================= */
 
 .promotions {
-    /* TODO */
+    padding: 100px 60px;
+    background-color: #f5f5f5;
+    text-align: center;
 }
 
 .promotions h2 {
-    /* TODO */
+    font-size: 3rem;
+    color: #06142b;
+    margin-bottom: 20px;
 }
 
 .promotion-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 .promotion-card {
     flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 35px;
+    text-align: left;
+    transition: 0.3s;
 }
 
+.promotion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.promotion-card h3 {
+    font-size: 1.5rem;
+    color: #06142b;
+    margin-bottom: 20px;
+}
+.promotion-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.promotion-card a {
+    color: #e67e00;
+    font-weight: bold;
+}
+.offer-tag {
+    display: inline-block;
+    background-color: #f5e3a8;
+    color: #a35b00;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.promotion-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 60px;
+}
 
 /* =========================================
    CARS
    ========================================= */
 
+
+.car-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.car-footer {
+    margin-top: auto;
+}
 .cars {
-    /* TODO */
+    padding: 100px 60px;
+    background-color: #f5f5f5;
+    text-align: center;
 }
 
 .cars h2 {
-    /* TODO */
+    font-size: 3rem;
+    color: #06142b;
+    margin-bottom: 20px;
 }
 
 .car-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: 1fr;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:0 auto;
 }
 
 .car-card {
+    background: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    padding-bottom: 20px;
+    text-align: left;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
+}
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.car-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    padding: 10px;
+}
+.car-card-content {
+    padding: 25px;
 }
 
 .car-card h3 {
-    margin: 10px 20px;
+    font-size: 2rem;
+    color: #06142b;
+    margin-bottom: 20px;
 }
 
 .car-card p {
-    margin: 10px 20px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    min-height: 80px;
 }
 .car-card .btn {
     display: inline-block;
     margin-left: 20px;
+    width: 120px;
+    text-align: center;
+    padding: 12px 0;
+    margin-left: 0;
 }
+
+.fleet-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+.car-tag {
+    display: inline-block;
+    color: #f39c12;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.car-info {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.car-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #06142b;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-label {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.price-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #06142b;
+}
+
 
 
 
@@ -200,21 +337,79 @@ nav a:hover {
    ========================================= */
 
 .testimonials {
-    flex: 1;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 100px 60px;
+    background-color: #f5f5f5;
+    text-align: center;
 }
 
 .testimonials h2 {
-    /* TODO */
+    font-size: 3rem;
+    color: #06142b;
+    margin-bottom: 20px;
+}
+
+.testimonial-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 60px;
 }
 
 .testimonial-container {
-    /* TODO: Use Flexbox */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .testimonial {
-    /* TODO */
+    flex: 1;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.testimonial p:last-child {
+    color: #f39c12;
+    font-size: 1.2rem;
+}
+.testimonial p:first-child {
+    font-style: italic;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.testimonial h3 {
+    color: #06142b;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.customer-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #06142b;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+.customer-info span {
+    color: #777;
+    font-size: 0.9rem;
 }
 
 
@@ -223,7 +418,9 @@ nav a:hover {
    ========================================= */
 
 footer {
-    /* TODO */
+    background-color: #06142b;
+    color: white;
+    padding: 80px 60px 30px;
 }
 
 .footer-container {
@@ -232,21 +429,39 @@ footer {
     gap: 30px;
 
 }
+.footer-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: white;
+}
+.footer-container p {
+    color: #c5c5c5;
+    line-height: 1.8;
+}
 
 footer ul {
-    /* TODO */
+    list-style: none;
+    padding: 0;
 }
 
 footer li {
-    /* TODO */
+    margin-bottom: 15px;
 }
 
 footer a {
-    /* TODO */
+   color: #c5c5c5;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: #f39c12;
 }
 
 .copyright {
-    /* TODO */
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    color: #c5c5c5;
 }
 
 
@@ -254,10 +469,23 @@ footer a {
    RESPONSIVE DESIGN
    ========================================= */
 
+@media (max-width: 1024px) {
+
+    .car-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promotion-container,
+    .testimonial-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
 
-    /* TODO:
-       Modify the layout for tablets/mobile
-    */
-
+    .car-grid,
+    .promotion-container,
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
 }
