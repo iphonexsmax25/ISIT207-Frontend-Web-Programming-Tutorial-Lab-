@@ -482,18 +482,31 @@ footer a:hover {
 }
 
 
+
+
+
 @media (max-width: 768px) {
 
-    header {
+      header {
         flex-direction: column;
         padding: 20px;
+        padding: 15px;
     }
 
     nav ul {
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
+        gap: 10px;
         margin-top: 15px;
+    }
+     nav a {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        margin-bottom: 10px;
     }
 
     .hero h1 {
