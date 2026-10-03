@@ -481,11 +481,41 @@ footer a:hover {
     }
 }
 
+
 @media (max-width: 768px) {
 
-    .car-grid,
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .promotions,
+    .cars,
+    .testimonials,
+    footer {
+        padding: 60px 20px;
+    }
+
     .promotion-container,
-    .testimonial-container {
+    .car-grid,
+    .testimonial-container,
+    .footer-container {
         grid-template-columns: 1fr;
     }
 }
